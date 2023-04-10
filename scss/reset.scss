@@ -27,6 +27,20 @@ img {
   height: auto;
 }
 
+// BASICS
+body {
+  overflow-x: hidden;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+section, footer {
+  width: 100%;
+  padding: 70px 0;
+}
+// BASICS END
 
 // buttons
 .btn__primary {
