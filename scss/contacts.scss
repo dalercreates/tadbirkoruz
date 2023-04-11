@@ -1,0 +1,69 @@
+@import "imports.scss";
+@import "light-bg-nav";
+
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 430px;
+  margin: 0 auto 100px auto;
+  padding-top: 250px;
+  font-family: 'Helvetica Neue', sans-serif;
+  h2 {
+    font-size: 48px;
+  }
+}
+.contacts__info {
+  font-size: 24px;
+  p {
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+  a {
+    font-weight: 500;
+    color: $primary__color;
+    transition: $transition;
+    &:hover {
+      color: $secondary__color;
+    }
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .contacts {
+    h2 {
+      font-size: 38px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts {
+    gap: 20px;
+    width: 320px;
+    padding-top: 200px;
+    h2 {
+      font-size: 26px;
+    }
+  }
+  .contacts__info {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contacts {
+    width: 280px;
+    padding-top: 180px;
+    h2 {
+      font-size: 24px;
+    }
+  }
+  .contacts__info {
+    font-size: 16px;
+  }
+}
+
+@import "footer.scss";

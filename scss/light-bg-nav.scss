@@ -1,0 +1,86 @@
+@import "nav.scss";
+// NAV
+nav {
+  &.sticky {
+    background-color: $primary__color;
+    > ul {
+      color: #fff;
+      &.active {
+        color: #fff;
+      }
+      li a {
+        color: #fff;
+        &:hover {
+          color: $secondary__color;
+        }
+        &.active {
+          color: #fff;
+        }
+      }
+    }
+    > .dropdown {
+      button {
+        color: #fff;
+      }
+      ul {
+        background-color: #fff;
+        li {
+          color: $primary__color;
+        }
+      }
+    }
+  }
+  > ul {
+    color: $primary__color;
+    &.active {
+      color: #fff;
+    }
+    li a {
+      color: $primary__color;
+      &.active {
+        color: #fff;
+      }
+    }
+  }
+  .dropdown {
+    button {
+      color: $primary__color;
+    }
+    ul {
+      background-color: #fff;
+      li {
+        color: $primary__color;
+      }
+    }
+  }
+}
+// NAV END
+
+@media screen and (max-width: 1024px) {
+  // NAV MEDIA 1024
+  nav {
+    &.sticky {
+      .toggle-menu {
+        .bar {
+          background-color: #fff;
+        }
+      }
+    }
+    .toggle-menu {
+      .bar {
+        background-color: $primary__color;
+      }
+      &.checked .bar {
+        background-color: #fff;
+      }
+    }
+    .mobile__nav {
+      &.active {
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+  // NAV MEDIA 1024 END
+}

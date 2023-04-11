@@ -37,6 +37,11 @@ nav {
     position: absolute;
     top: 54px;
     right: 10%;
+    ul {
+      li a {
+        color: $primary__color;
+      }
+    }
     button {
       padding: 0;
       background: transparent;

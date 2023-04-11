@@ -12,14 +12,17 @@ dropdownButton.addEventListener('click', () => {
 // mobile nav
 const toggleBtn = document.getElementById('toggle-menu');
 const mobileNav = document.getElementById('mobile__nav');
+const logo = document.getElementById('logo');
 
 toggleBtn.addEventListener('click', () => {
     if (toggleBtn.classList.contains('checked')) {
         toggleBtn.classList.remove('checked');
         mobileNav.classList.remove('active');
+        logo.classList.remove('active');
     } else {
         toggleBtn.classList.add('checked');
         mobileNav.classList.add('active');
+        logo.classList.add('active');
     }
 });
 
