@@ -135,6 +135,24 @@ nav {
 nav.sticky {
   background-color: #1A1A18;
 }
+nav.inverse.sticky ul li a {
+  color: #fff;
+}
+nav.inverse.sticky ul li svg {
+  fill: #fff;
+}
+nav.inverse.sticky .dropdown button {
+  color: #fff;
+}
+nav.inverse ul li a {
+  color: #1A1A18;
+}
+nav.inverse ul li svg {
+  fill: #1A1A18;
+}
+nav.inverse .dropdown button {
+  color: #1A1A18;
+}
 nav > ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -272,6 +290,15 @@ nav .mobile__nav {
   }
 }
 @media screen and (max-width: 1024px) {
+  nav.inverse .toggle-menu .bar {
+    background-color: #1A1A18;
+  }
+  nav.inverse.sticky .toggle-menu .bar {
+    background-color: #fff;
+  }
+  nav.inverse .mobile__nav .nav__link a {
+    color: #fff;
+  }
   nav ul .nav__link {
     display: none;
   }
@@ -374,137 +401,6 @@ nav .mobile__nav {
 @media screen and (max-width: 480px) {
   nav ul li svg {
     width: 180px;
-  }
-}
-nav.sticky {
-  background-color: #1A1A18;
-}
-nav.sticky > ul {
-  color: #fff;
-}
-nav.sticky > ul.active {
-  color: #fff;
-}
-nav.sticky > ul li a {
-  color: #fff;
-}
-nav.sticky > ul li a:hover {
-  color: #D1C7A9;
-}
-nav.sticky > ul li a.active {
-  color: #fff;
-}
-nav.sticky > .dropdown button {
-  color: #fff;
-}
-nav.sticky > .dropdown ul {
-  background-color: #fff;
-}
-nav.sticky > .dropdown ul li {
-  color: #1A1A18;
-}
-nav > ul {
-  color: #1A1A18;
-}
-nav > ul.active {
-  color: #fff;
-}
-nav > ul li a {
-  color: #1A1A18;
-}
-nav > ul li a.active {
-  color: #fff;
-}
-nav .dropdown button {
-  color: #1A1A18;
-}
-nav .dropdown ul {
-  background-color: #fff;
-}
-nav .dropdown ul li {
-  color: #1A1A18;
-}
-
-@media screen and (max-width: 1024px) {
-  nav.sticky .toggle-menu .bar {
-    background-color: #fff;
-  }
-  nav .toggle-menu .bar {
-    background-color: #1A1A18;
-  }
-  nav .toggle-menu.checked .bar {
-    background-color: #fff;
-  }
-  nav .mobile__nav.active a {
-    color: #fff;
-  }
-}
-.contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 30px;
-  width: 430px;
-  margin: 0 auto 100px auto;
-  padding-top: 250px;
-  font-family: "Helvetica Neue", sans-serif;
-}
-.contacts h2 {
-  font-size: 48px;
-}
-
-.contacts__info {
-  font-size: 24px;
-}
-.contacts__info p {
-  font-weight: 300;
-  margin-bottom: 15px;
-}
-.contacts__info a {
-  font-weight: 500;
-  color: #1A1A18;
-  -webkit-transition: all 400ms ease;
-  transition: all 400ms ease;
-}
-.contacts__info a:hover {
-  color: #D1C7A9;
-}
-.contacts__info ul li {
-  margin-bottom: 10px;
-}
-
-@media screen and (max-width: 1440px) {
-  .contacts h2 {
-    font-size: 38px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .contacts {
-    gap: 20px;
-    width: 320px;
-    padding-top: 200px;
-  }
-  .contacts h2 {
-    font-size: 26px;
-  }
-  .contacts__info {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .contacts {
-    width: 280px;
-    padding-top: 180px;
-  }
-  .contacts h2 {
-    font-size: 24px;
-  }
-  .contacts__info {
-    font-size: 16px;
   }
 }
 footer {
@@ -742,5 +638,73 @@ footer {
   }
   .footer__container .block_3 ul li a {
     font-size: 14px;
+  }
+}
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  width: 430px;
+  margin: 0 auto 100px auto;
+  padding-top: 250px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+.contacts h2 {
+  font-size: 48px;
+}
+
+.contacts__info {
+  font-size: 24px;
+}
+.contacts__info p {
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.contacts__info a {
+  font-weight: 500;
+  color: #1A1A18;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.contacts__info a:hover {
+  color: #D1C7A9;
+}
+.contacts__info ul li {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+  .contacts h2 {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts {
+    gap: 20px;
+    width: 320px;
+    padding-top: 200px;
+  }
+  .contacts h2 {
+    font-size: 26px;
+  }
+  .contacts__info {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contacts {
+    width: 280px;
+    padding-top: 180px;
+  }
+  .contacts h2 {
+    font-size: 24px;
+  }
+  .contacts__info {
+    font-size: 16px;
   }
 }

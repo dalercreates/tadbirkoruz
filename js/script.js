@@ -10,29 +10,26 @@ dropdownButton.addEventListener('click', () => {
 });
 
 // mobile nav
+const nav = document.getElementById('nav');
 const toggleBtn = document.getElementById('toggle-menu');
 const mobileNav = document.getElementById('mobile__nav');
-const logo = document.getElementById('logo');
-
 toggleBtn.addEventListener('click', () => {
     if (toggleBtn.classList.contains('checked')) {
         toggleBtn.classList.remove('checked');
         mobileNav.classList.remove('active');
-        logo.classList.remove('active');
+        nav.classList.remove('sticky');
     } else {
         toggleBtn.classList.add('checked');
         mobileNav.classList.add('active');
-        logo.classList.add('active');
+        nav.classList.add('sticky');
     }
 });
 
 // sticky nav
-const nav = document.getElementById('nav');
-
 document.addEventListener('scroll', () => {
     if (scrollY > 0) {
         nav.classList.add('sticky');
-    } else {
+    } else if (scrollY < 1 && !toggleBtn.classList.contains('checked')) {
         nav.classList.remove('sticky');
     }
 });

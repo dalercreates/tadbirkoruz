@@ -11,6 +11,32 @@ nav {
   &.sticky {
     background-color: $primary__color;
   }
+  &.inverse {
+    &.sticky {
+      ul li {
+        a {
+          color: #fff;
+        }
+        svg {
+          fill: #fff;
+        }
+      }
+      .dropdown button {
+        color: #fff;
+      }
+    }
+    ul li {
+      a {
+        color: $primary__color;
+      }
+      svg {
+        fill: $primary__color;
+      }
+    }
+    .dropdown button {
+      color: $primary__color;
+    }
+  }
   > ul {
     display: flex;
     align-items: center;
@@ -142,6 +168,19 @@ nav {
 @media screen and (max-width: 1024px) {
   // NAV MEDIA 1024
   nav {
+    &.inverse {
+      .toggle-menu .bar {
+        background-color: $primary__color;
+      }
+      &.sticky {
+        .toggle-menu .bar {
+          background-color: #fff;
+        }
+      }
+      .mobile__nav .nav__link a {
+        color: #fff;
+      }
+    }
     ul {
       .nav__link {
         display: none;
