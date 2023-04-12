@@ -65,14 +65,15 @@ header {
     padding: 100px 0;
     h2 {
       margin-bottom: 50px;
-      font-size: 42px;
+      font-size: 56px;
+      line-height: 130%;
       font-family: 'Berlingske Serif', sans-serif;
       font-weight: 600;
     }
     p {
-
-      margin-bottom: 100px;
-      font-size: 24px;
+      margin-bottom: 80px;
+      font-size: 18px;
+      line-height: 170%;
       font-weight: 400;
       font-family: 'Helvetica Neue', sans-serif;
     }
@@ -92,19 +93,18 @@ header {
   .info {
     width: 500px;
     margin: 0 auto;
-    padding: 100px 0;
-    h2 {
-      span {
-        visibility: hidden;
-      }
+    padding: 50px 0;
+    h3 {
       margin-bottom: 24px;
-      font-size: 28px;
+      font-size: 34px;
+      line-height: 130%;
       font-family: 'Berlingske Serif', sans-serif;
       font-weight: 600;
     }
     p {
-      margin-bottom: 100px;
+      margin-bottom: 80px;
       font-size: 18px;
+      line-height: 150%;
       font-weight: 400;
       font-family: 'Helvetica Neue', sans-serif;
     }
@@ -120,7 +120,7 @@ header {
       width: 500px;
       right: 5%;
       h1 {
-        font-size: 38px;
+        font-size: 42px;
       }
     }
   }
@@ -131,12 +131,9 @@ header {
     width: 1000px;
     .info {
       width: 900px;
-      padding: 80px 0;
+      padding: 50px 0;
       h2 {
-        font-size: 36px;
-      }
-      p {
-        font-size: 20px;
+        font-size: 42px;
       }
     }
   }
@@ -148,12 +145,15 @@ header {
     .info {
       width: 400px;
       margin: 0 auto;
-      padding: 80px 0;
-      h2 {
-        font-size: 26px;
+      h3 {
+        font-size: 28px;
       }
-      p {
-        margin-bottom: 80px;
+    }
+    &:nth-child(2) {
+      .info {
+        p {
+          margin-bottom: 45px;
+        }
       }
     }
   }
@@ -184,10 +184,12 @@ header {
       width: 600px;
       padding: 50px 0;
       h2 {
-        font-size: 28px;
+        font-size: 34px;
+        margin-bottom: 30px;
       }
       p {
         font-size: 18px;
+        margin-bottom: 50px;
       }
     }
   }
@@ -200,8 +202,8 @@ header {
     .info {
       width: 600px;
       padding: 50px 0;
-      h2 {
-        font-size: 28px;
+      h3 {
+        font-size: 34px;
       }
       p {
         margin-bottom: 80px;
@@ -222,6 +224,9 @@ header {
       h1 {
         font-size: 32px;
       }
+      a {
+        font-size: 16px;
+      }
     }
   }
   // HEADER MEDIA 768 END
@@ -234,11 +239,11 @@ header {
       padding: 50px 0;
       h2 {
         margin-bottom: 30px;
-        font-size: 24px;
+        font-size: 28px;
       }
       p {
         margin-bottom: 50px;
-        font-size: 18px;
+        font-size: 16px;
       }
       .btn__primary {
         padding: 15px 24px;
@@ -253,11 +258,12 @@ header {
     .info {
       width: 400px;
       padding: 50px 0;
-      h2 {
+      h3 {
         margin-bottom: 30px;
-        font-size: 24px;
+        font-size: 28px;
       }
       p {
+        font-size: 16px;
         margin-bottom: 50px;
       }
     }
@@ -272,11 +278,11 @@ header {
     background: url('../img/main__bg-mobile.webp') no-repeat;
     background-size: cover;
     .info {
-      width: 280px;
+      width: 310px;
       left: 14px;
       bottom: 32px;
       h1 {
-        font-size: 24px;
+        font-size: 26px;
         margin-bottom: 16px;
       }
       a {
@@ -293,7 +299,7 @@ header {
       width: 270px;
       h2 {
         margin-bottom: 30px;
-        font-size: 20px;
+        font-size: 24px;
       }
       p {
         margin-bottom: 50px;
@@ -308,9 +314,9 @@ header {
     width: 300px;
     .info {
       width: 270px;
-      h2 {
+      h3 {
         margin-bottom: 30px;
-        font-size: 20px;
+        font-size: 24px;
       }
       p {
         font-size: 14px;

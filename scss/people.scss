@@ -19,6 +19,7 @@ section {
       width: 320px;
       height: 400px;
       position: relative;
+      transition: $transition;
       .person__info {
         h4 {
           font-size: 26px;
@@ -28,14 +29,18 @@ section {
           margin-bottom: 4px;
         }
         p {
-          font-size: 16px;
+          font-size: 18px;
           font-family: 'Helvetica Neue', sans-serif;
           font-weight: 300;
         }
         color: #fff;
         position: absolute;
         bottom: 32px;
-        left: 12%;
+        left: 7%;
+      }
+      &:hover {
+        transform: scale(0.9);
+        opacity: 0.8;
       }
     }
   }
@@ -49,7 +54,7 @@ section {
       width: 1000px;
       .people__info {
         h2 {
-          font-size: 48px;
+          font-size: 38px;
           margin-bottom: 50px;
         }
         .people__cards{
@@ -68,7 +73,7 @@ section {
       width: 768px;
       .people__info {
         h2 {
-          font-size: 38px;
+          font-size: 34px;
         }
         .people__cards{
           grid-template-columns: repeat(2, 1fr);
@@ -107,6 +112,7 @@ section {
               font-size: 20px;
             }
             p {
+              font-size: 16px;
               text-align: center;
             }
             bottom: 20px;

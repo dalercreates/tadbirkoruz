@@ -99,13 +99,13 @@ section, footer {
 }
 
 .btn__primary {
-  width: 290px;
-  height: 80px;
+  width: 250px;
+  height: 70px;
   color: #fff;
-  background-color: #1A1A18;
-  border-radius: 15px;
-  padding: 24px 48px;
-  font-size: 24px;
+  background-color: #464646;
+  border-radius: 10px;
+  padding: 20px 60px;
+  font-size: 18px;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 500;
   -webkit-transition: all 400ms ease;
@@ -144,6 +144,9 @@ nav.inverse.sticky ul li svg {
 nav.inverse.sticky .dropdown button {
   color: #fff;
 }
+nav.inverse.sticky .dropdown ul li a {
+  color: #000;
+}
 nav.inverse ul li a {
   color: #1A1A18;
 }
@@ -168,7 +171,7 @@ nav > ul {
 }
 nav > ul li a {
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
@@ -204,7 +207,7 @@ nav .dropdown button {
       -ms-flex-align: center;
           align-items: center;
   gap: 5px;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
@@ -270,9 +273,6 @@ nav .mobile__nav {
   nav ul {
     gap: 18px;
   }
-  nav ul li a {
-    font-size: 14px;
-  }
   nav ul li svg {
     width: 200px;
     margin: 0 30px;
@@ -280,9 +280,6 @@ nav .mobile__nav {
   nav .dropdown {
     top: 56px;
     right: 5%;
-  }
-  nav .dropdown button {
-    font-size: 14px;
   }
   nav .dropdown button svg {
     width: 18px;
@@ -386,7 +383,7 @@ nav .mobile__nav {
     gap: 20px;
   }
   nav .mobile__nav li:not(.nav__link) button {
-    font-size: 16px;
+    font-size: 18px;
     font-family: "Helvetica Neue", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
@@ -398,7 +395,21 @@ nav .mobile__nav {
     color: #FFFFFF;
   }
 }
+@media screen and (max-width: 768px) {
+  nav .mobile__nav .nav__link a {
+    font-size: 16px;
+  }
+  nav .mobile__nav li:not(.nav__link) button {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 480px) {
+  nav .mobile__nav .nav__link a {
+    font-size: 16px;
+  }
+  nav .mobile__nav li:not(.nav__link) button {
+    font-size: 16px;
+  }
   nav ul li svg {
     width: 180px;
   }
@@ -424,7 +435,7 @@ footer {
   margin-bottom: 24px;
 }
 .footer__container .block_1 p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   width: 380px;
 }
@@ -437,7 +448,7 @@ footer {
 .footer__container .block_2 ul li a {
   text-transform: uppercase;
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
@@ -492,6 +503,9 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .block_4 p:first-child {
   text-transform: uppercase;
@@ -519,22 +533,22 @@ footer {
   }
   .footer__container .block_1 p {
     width: 300px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .footer__container .block_2 ul {
     gap: 18px;
   }
   .footer__container .block_2 ul li a {
-    font-size: 14px;
+    font-size: 16px;
   }
   .footer__container .block_3 li a {
-    font-size: 14px;
+    font-size: 16px;
   }
   .block_4 {
     width: 1000px;
   }
   .block_4 p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -555,7 +569,7 @@ footer {
     width: 375px;
     margin: 0 auto;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
   }
   .footer__container .block_2 {
     margin-top: 30px;
@@ -572,6 +586,9 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     gap: 24px;
+  }
+  .footer__container .block_2 ul li a {
+    font-size: 16px;
   }
   .footer__container .block_3 {
     margin-top: 30px;
@@ -622,6 +639,9 @@ footer {
     width: -moz-fit-content;
     width: fit-content;
   }
+  .block_2 ul li a {
+    font-size: 16px;
+  }
   .block_4 {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -636,7 +656,13 @@ footer {
     font-size: 14px;
     width: 290px;
   }
+  .footer__container .block_2 ul li a {
+    font-size: 14px;
+  }
   .footer__container .block_3 ul li a {
+    font-size: 14px;
+  }
+  .footer__container .block_4 {
     font-size: 14px;
   }
 }
@@ -655,11 +681,11 @@ footer {
   font-family: "Helvetica Neue", sans-serif;
 }
 .contacts h2 {
-  font-size: 48px;
+  font-size: 42px;
 }
 
 .contacts__info {
-  font-size: 24px;
+  font-size: 18px;
 }
 .contacts__info p {
   font-weight: 300;

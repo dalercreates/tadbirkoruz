@@ -99,13 +99,13 @@ section, footer {
 }
 
 .btn__primary {
-  width: 290px;
-  height: 80px;
+  width: 250px;
+  height: 70px;
   color: #fff;
-  background-color: #1A1A18;
-  border-radius: 15px;
-  padding: 24px 48px;
-  font-size: 24px;
+  background-color: #464646;
+  border-radius: 10px;
+  padding: 20px 60px;
+  font-size: 18px;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 500;
   -webkit-transition: all 400ms ease;
@@ -144,6 +144,9 @@ nav.inverse.sticky ul li svg {
 nav.inverse.sticky .dropdown button {
   color: #fff;
 }
+nav.inverse.sticky .dropdown ul li a {
+  color: #000;
+}
 nav.inverse ul li a {
   color: #1A1A18;
 }
@@ -168,7 +171,7 @@ nav > ul {
 }
 nav > ul li a {
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
@@ -204,7 +207,7 @@ nav .dropdown button {
       -ms-flex-align: center;
           align-items: center;
   gap: 5px;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
@@ -270,9 +273,6 @@ nav .mobile__nav {
   nav ul {
     gap: 18px;
   }
-  nav ul li a {
-    font-size: 14px;
-  }
   nav ul li svg {
     width: 200px;
     margin: 0 30px;
@@ -280,9 +280,6 @@ nav .mobile__nav {
   nav .dropdown {
     top: 56px;
     right: 5%;
-  }
-  nav .dropdown button {
-    font-size: 14px;
   }
   nav .dropdown button svg {
     width: 18px;
@@ -386,7 +383,7 @@ nav .mobile__nav {
     gap: 20px;
   }
   nav .mobile__nav li:not(.nav__link) button {
-    font-size: 16px;
+    font-size: 18px;
     font-family: "Helvetica Neue", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
@@ -398,7 +395,21 @@ nav .mobile__nav {
     color: #FFFFFF;
   }
 }
+@media screen and (max-width: 768px) {
+  nav .mobile__nav .nav__link a {
+    font-size: 16px;
+  }
+  nav .mobile__nav li:not(.nav__link) button {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 480px) {
+  nav .mobile__nav .nav__link a {
+    font-size: 16px;
+  }
+  nav .mobile__nav li:not(.nav__link) button {
+    font-size: 16px;
+  }
   nav ul li svg {
     width: 180px;
   }
@@ -424,7 +435,7 @@ footer {
   margin-bottom: 24px;
 }
 .footer__container .block_1 p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   width: 380px;
 }
@@ -437,7 +448,7 @@ footer {
 .footer__container .block_2 ul li a {
   text-transform: uppercase;
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
@@ -492,6 +503,9 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .block_4 p:first-child {
   text-transform: uppercase;
@@ -519,22 +533,22 @@ footer {
   }
   .footer__container .block_1 p {
     width: 300px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .footer__container .block_2 ul {
     gap: 18px;
   }
   .footer__container .block_2 ul li a {
-    font-size: 14px;
+    font-size: 16px;
   }
   .footer__container .block_3 li a {
-    font-size: 14px;
+    font-size: 16px;
   }
   .block_4 {
     width: 1000px;
   }
   .block_4 p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -555,7 +569,7 @@ footer {
     width: 375px;
     margin: 0 auto;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
   }
   .footer__container .block_2 {
     margin-top: 30px;
@@ -572,6 +586,9 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     gap: 24px;
+  }
+  .footer__container .block_2 ul li a {
+    font-size: 16px;
   }
   .footer__container .block_3 {
     margin-top: 30px;
@@ -622,6 +639,9 @@ footer {
     width: -moz-fit-content;
     width: fit-content;
   }
+  .block_2 ul li a {
+    font-size: 16px;
+  }
   .block_4 {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -636,7 +656,13 @@ footer {
     font-size: 14px;
     width: 290px;
   }
+  .footer__container .block_2 ul li a {
+    font-size: 14px;
+  }
   .footer__container .block_3 ul li a {
+    font-size: 14px;
+  }
+  .footer__container .block_4 {
     font-size: 14px;
   }
 }
@@ -662,12 +688,14 @@ section .people__info .person__card {
   width: 320px;
   height: 400px;
   position: relative;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
 }
 section .people__info .person__card .person__info {
   color: #fff;
   position: absolute;
   bottom: 32px;
-  left: 12%;
+  left: 7%;
 }
 section .people__info .person__card .person__info h4 {
   font-size: 26px;
@@ -677,9 +705,14 @@ section .people__info .person__card .person__info h4 {
   margin-bottom: 4px;
 }
 section .people__info .person__card .person__info p {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
+}
+section .people__info .person__card:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 1440px) {
@@ -687,7 +720,7 @@ section .people__info .person__card .person__info p {
     width: 1000px;
   }
   section .container .people__info h2 {
-    font-size: 48px;
+    font-size: 38px;
     margin-bottom: 50px;
   }
   section .container .people__info .people__cards {
@@ -701,7 +734,7 @@ section .people__info .person__card .person__info p {
     width: 768px;
   }
   section .container .people__info h2 {
-    font-size: 38px;
+    font-size: 34px;
   }
   section .container .people__info .people__cards {
     -ms-grid-columns: 1fr 10px 1fr;
@@ -745,6 +778,7 @@ section .people__info .person__card .person__info p {
     font-size: 20px;
   }
   section .container .people__info .person__card .person__info p {
+    font-size: 16px;
     text-align: center;
   }
   section .container .btn__primary {
@@ -846,13 +880,15 @@ header .info a:hover svg {
 }
 .big__slide .info h2 {
   margin-bottom: 50px;
-  font-size: 42px;
+  font-size: 56px;
+  line-height: 130%;
   font-family: "Berlingske Serif", sans-serif;
   font-weight: 600;
 }
 .big__slide .info p {
-  margin-bottom: 100px;
-  font-size: 24px;
+  margin-bottom: 80px;
+  font-size: 18px;
+  line-height: 170%;
   font-weight: 400;
   font-family: "Helvetica Neue", sans-serif;
 }
@@ -877,20 +913,19 @@ header .info a:hover svg {
 .small__slide .info {
   width: 500px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 50px 0;
 }
-.small__slide .info h2 {
+.small__slide .info h3 {
   margin-bottom: 24px;
-  font-size: 28px;
+  font-size: 34px;
+  line-height: 130%;
   font-family: "Berlingske Serif", sans-serif;
   font-weight: 600;
 }
-.small__slide .info h2 span {
-  visibility: hidden;
-}
 .small__slide .info p {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   font-size: 18px;
+  line-height: 150%;
   font-weight: 400;
   font-family: "Helvetica Neue", sans-serif;
 }
@@ -904,20 +939,17 @@ header .info a:hover svg {
     right: 5%;
   }
   header .info h1 {
-    font-size: 38px;
+    font-size: 42px;
   }
   .big__slide {
     width: 1000px;
   }
   .big__slide .info {
     width: 900px;
-    padding: 80px 0;
+    padding: 50px 0;
   }
   .big__slide .info h2 {
-    font-size: 36px;
-  }
-  .big__slide .info p {
-    font-size: 20px;
+    font-size: 42px;
   }
   .small__slides {
     width: 1000px;
@@ -928,13 +960,12 @@ header .info a:hover svg {
   .small__slide .info {
     width: 400px;
     margin: 0 auto;
-    padding: 80px 0;
   }
-  .small__slide .info h2 {
-    font-size: 26px;
+  .small__slide .info h3 {
+    font-size: 28px;
   }
-  .small__slide .info p {
-    margin-bottom: 80px;
+  .small__slide:nth-child(2) .info p {
+    margin-bottom: 45px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -959,10 +990,12 @@ header .info a:hover svg {
     padding: 50px 0;
   }
   .big__slide .info h2 {
-    font-size: 28px;
+    font-size: 34px;
+    margin-bottom: 30px;
   }
   .big__slide .info p {
     font-size: 18px;
+    margin-bottom: 50px;
   }
   .small__slides {
     width: 750px;
@@ -978,8 +1011,8 @@ header .info a:hover svg {
     width: 600px;
     padding: 50px 0;
   }
-  .small__slide .info h2 {
-    font-size: 28px;
+  .small__slide .info h3 {
+    font-size: 34px;
   }
   .small__slide .info p {
     margin-bottom: 80px;
@@ -997,6 +1030,9 @@ header .info a:hover svg {
   header .info h1 {
     font-size: 32px;
   }
+  header .info a {
+    font-size: 16px;
+  }
   .big__slide {
     width: 450px;
   }
@@ -1006,11 +1042,11 @@ header .info a:hover svg {
   }
   .big__slide .info h2 {
     margin-bottom: 30px;
-    font-size: 24px;
+    font-size: 28px;
   }
   .big__slide .info p {
     margin-bottom: 50px;
-    font-size: 18px;
+    font-size: 16px;
   }
   .big__slide .info .btn__primary {
     padding: 15px 24px;
@@ -1025,11 +1061,12 @@ header .info a:hover svg {
     width: 400px;
     padding: 50px 0;
   }
-  .small__slide .info h2 {
+  .small__slide .info h3 {
     margin-bottom: 30px;
-    font-size: 24px;
+    font-size: 28px;
   }
   .small__slide .info p {
+    font-size: 16px;
     margin-bottom: 50px;
   }
 }
@@ -1040,12 +1077,12 @@ header .info a:hover svg {
     background-size: cover;
   }
   header .info {
-    width: 280px;
+    width: 310px;
     left: 14px;
     bottom: 32px;
   }
   header .info h1 {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 16px;
   }
   header .info a {
@@ -1059,7 +1096,7 @@ header .info a:hover svg {
   }
   .big__slide .info h2 {
     margin-bottom: 30px;
-    font-size: 20px;
+    font-size: 24px;
   }
   .big__slide .info p {
     margin-bottom: 50px;
@@ -1074,9 +1111,9 @@ header .info a:hover svg {
   .small__slide .info {
     width: 270px;
   }
-  .small__slide .info h2 {
+  .small__slide .info h3 {
     margin-bottom: 30px;
-    font-size: 20px;
+    font-size: 24px;
   }
   .small__slide .info p {
     font-size: 14px;

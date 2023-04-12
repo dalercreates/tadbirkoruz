@@ -21,8 +21,15 @@ nav {
           fill: #fff;
         }
       }
-      .dropdown button {
-        color: #fff;
+      .dropdown {
+        button {
+          color: #fff;
+        }
+        ul {
+          li a {
+            color: #000;
+          }
+        }
       }
     }
     ul li {
@@ -45,7 +52,7 @@ nav {
     color: #fff;
     li a {
       color: #fff;
-      font-size: 16px;
+      font-size: 18px;
       font-family: 'Helvetica Neue', sans-serif;
       font-weight: 300;
       text-transform: uppercase;
@@ -78,7 +85,7 @@ nav {
       display: flex;
       align-items: center;
       gap: 5px;
-      font-size: 16px;
+      font-size: 18px;
       font-family: 'Helvetica Neue', sans-serif;
       font-weight: 300;
       text-transform: uppercase;
@@ -143,9 +150,6 @@ nav {
   nav {
     ul {
       gap: 18px;
-      li a {
-        font-size: 14px;
-      }
       li svg {
         width: 200px;
         margin: 0 30px;
@@ -155,7 +159,6 @@ nav {
       top: 56px;
       right: 5%;
       button {
-        font-size: 14px;
         svg {
           width: 18px;
           height: 18px;
@@ -246,7 +249,7 @@ nav {
         align-items: center;
         gap: 20px;
         button {
-          font-size: 16px;
+          font-size: 18px;
           font-family: 'Helvetica Neue', sans-serif;
           font-weight: 300;
           text-transform: uppercase;
@@ -262,9 +265,38 @@ nav {
   }
   // NAV MEDIA 1024 END
 }
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  // NAV MEDIA 768
+  nav {
+    .mobile__nav {
+      .nav__link {
+        a {
+          font-size: 16px;
+        }
+      }
+      li:not(.nav__link) {
+        button {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  // NAV MEDIA 768 END
+}
 @media screen and (max-width: 480px) {
   nav {
+    .mobile__nav {
+      .nav__link {
+        a {
+          font-size: 16px;
+        }
+      }
+      li:not(.nav__link) {
+        button {
+          font-size: 16px;
+        }
+      }
+    }
     ul {
       li svg {
         width: 180px;

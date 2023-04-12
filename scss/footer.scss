@@ -15,7 +15,7 @@ footer {
       margin-bottom: 24px;
     }
     p {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 24px;
       width: 380px;
     }
@@ -27,7 +27,7 @@ footer {
       li a {
         text-transform: uppercase;
         color: #fff;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 400;
         transition: $transition;
         &:hover {
@@ -64,6 +64,7 @@ footer {
   margin: 50px auto 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   p:first-child {
     text-transform: uppercase;
   }
@@ -92,27 +93,27 @@ footer {
       }
       p {
         width: 300px;
-        font-size: 14px;
+        font-size: 16px;
       }
     }
     .block_2 {
       ul {
         li a {
-          font-size: 14px;
+          font-size: 16px;
         }
         gap: 18px;
       }
     }
     .block_3 {
       li a {
-        font-size: 14px;
+        font-size: 16px;
       }
     }
   }
   .block_4 {
     width: 1000px;
     p {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
   // FOOTER MEDIA 1440 END
@@ -131,7 +132,7 @@ footer {
         width: 375px;
         margin: 0 auto;
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
       }
     }
     .block_2 {
@@ -141,6 +142,9 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 24px;
+        li a {
+          font-size: 16px;
+        }
       }
     }
     .block_3 {
@@ -176,6 +180,13 @@ footer {
   .footer__container {
     width: fit-content;
   }
+  .block_2 {
+    ul li {
+      a {
+        font-size: 16px;
+      }
+    }
+  }
   .block_4 {
     width: fit-content;
   }
@@ -191,12 +202,22 @@ footer {
         width: 290px;
       }
     }
+    .block_2 {
+      ul li {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
     .block_3 {
       ul {
         li a {
           font-size: 14px;
         }
       }
+    }
+    .block_4 {
+      font-size: 14px;
     }
   }
   // FOOTER MEDIA 480 END
