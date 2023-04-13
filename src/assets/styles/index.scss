@@ -1,0 +1,87 @@
+@import 'variables.scss';
+@import 'fonts';
+
+html {
+	font-size: 18px;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+// BASICS
+body {
+	overflow-x: hidden;
+}
+
+.container {
+	width: 1440px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+section, footer {
+	width: 100%;
+	padding: 70px 0;
+}
+
+// BASICS END
+
+// buttons
+.btn__primary {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	width: 250px;
+	height: 70px;
+	padding: 20px 60px;
+	transition: $transition;
+	color: #FFFFFF;
+	border-radius: 10px;
+	background-color: #181818;
+
+	&:hover {
+		background-color: $secondary__color;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.container {
+		width: 1000px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		width: 768px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		width: fit-content;
+	}
+}
+
+@media screen and (max-width: 480px) {
+}
