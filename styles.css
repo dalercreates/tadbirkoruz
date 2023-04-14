@@ -1,0 +1,84 @@
+@font-face {
+	font-family: 'Berlingske Serif';
+	src: url('./assets/fonts/BerlingskeSerif/BerlingskeSerif-SemiBold.eot');
+	src: url('./assets/fonts/BerlingskeSerif/BerlingskeSerif-SemiBold.eot?#iefix') format('embedded-opentype'),
+	url('./assets/fonts/BerlingskeSerif/BerlingskeSerif-SemiBold.woff') format('woff'),
+	url('./assets/fonts/BerlingskeSerif/BerlingskeSerif-SemiBold.ttf') format('truetype'),
+	url('./assets/fonts/BerlingskeSerif/BerlingskeSerif-SemiBold.svg#BerlingskeSerif-SemiBold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+html {
+	font-size: 18px;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	overflow: hidden;
+	height: 100vh;
+	background-color: #1D2838;
+	background-image: url('assets/images/bg.webp');
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-size: contain;
+}
+
+body div {
+	position: absolute;
+	top: 50%;
+	max-width: 766px;
+	margin-left: 120px;
+	transform: translateY(-50%);
+	color: white;
+}
+
+body div h1 {
+	font-family: 'Berlingske Serif', sans-serif;
+	font-size: 80px;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+
+body div p {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 23px;
+	margin-bottom: 24px;
+}
+
+body div .description {
+	font-weight: 300;
+	margin-bottom: 48px;
+	color: #DADADA;
+}
+
+body div ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	gap: 24px;
+}
