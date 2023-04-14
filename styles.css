@@ -231,6 +231,10 @@ body div ul {
 		overflow-y: visible;
 	}
 
+	body > ul li a {
+		color: #FFFFFF;
+	}
+
 	body picture {
 		display: block;
 		height: 70vh;
