@@ -121,7 +121,7 @@ body div ul {
 @media screen and (max-width: 1024px) {
 	body {
 		background-size: auto calc(100vh - 350px);
-		background-position: right -120px top;
+		background-position: right 20% top;
 	}
 
 	body .links {
@@ -136,11 +136,12 @@ body div ul {
 	body div {
 		position: absolute;
 		max-width: 100%;
-		max-height: 500px;
 		background-color: white;
 		bottom: 0;
 		left: 0;
-		padding: 50px 90px;
+		padding: 0 70px;
+		max-height: 480px;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -169,7 +170,7 @@ body div ul {
 
 @media screen and (max-width: 744px) {
 	body {
-		background-size: auto calc(100vh - 340px);
+		background-size: auto calc(100vh - 500px);
 		background-position: right 30% top;
 	}
 
@@ -178,7 +179,8 @@ body div ul {
 	}
 
 	body div {
-		padding: 60px 40px;
+		padding: 0 40px;
+		max-height: 500px;
 	}
 
 	body div h1 {
@@ -193,8 +195,8 @@ body div ul {
 
 @media screen and (max-width: 430px) {
 	body {
-		background-position: right 30% top;
-		background-size: auto calc(100vh - 280px);
+		background-position: right 32% top;
+		background-size: auto calc(100vh - 400px);
 	}
 
 	body .links {
@@ -207,7 +209,8 @@ body div ul {
 	}
 
 	body div {
-		padding: 30px 20px;
+		padding: 0 20px;
+		max-height: 400px;
 	}
 
 	body div h1 {
