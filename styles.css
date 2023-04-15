@@ -49,8 +49,14 @@ body > ul {
 	position: absolute;
 	right: 5%;
 	top: 2.5%;
-	display: flex;
-	gap: 24px;
+}
+
+body > ul li {
+	display: inline-block;
+}
+
+body > ul li:not(:last-child) {
+	margin-right: 24px;
 }
 
 body > ul li a {
@@ -77,18 +83,26 @@ body div {
 	left: 120px;
 	bottom: 150px;
 	width: 620px;
-	display: flex;
-	flex-direction: column;
-	gap: 24px;
+}
+
+body div > *:not(:last-child) {
+	margin-bottom: 24px;
 }
 
 body div h1 {
 	font: normal normal 500 normal 64px 'Berlingske Serif', sans-serif;
 }
 
-body div ul {
-	display: flex;
-	gap: 24px;
+body div ul li {
+	display: inline-block;
+}
+
+body div ul li:not(:last-child) {
+	margin-right: 24px;
+}
+
+body div ul li a svg {
+	display: block;
 }
 
 @media screen and (max-width: 1440px) and (orientation: landscape) {
@@ -112,7 +126,10 @@ body div ul {
 
 	body div {
 		padding: 115px 75px 115px 50px;
-		gap: 50px;
+	}
+
+	body div > *:not(:last-child) {
+		margin-bottom: 50px;
 	}
 
 	body div h1 {
@@ -134,7 +151,10 @@ body div ul {
 		width: 450px;
 		bottom: 50%;
 		transform: translateY(50%);
-		gap: 16px;
+	}
+
+	body div > *:not(:last-child) {
+		margin-bottom: 16px;
 	}
 
 	body div h1 {
@@ -153,7 +173,10 @@ body div ul {
 
 	body div {
 		padding: 115px 75px 115px 50px;
-		gap: 50px;
+	}
+
+	body div > *:not(:last-child) {
+		margin-bottom: 50px;
 	}
 
 	body div h1 {
@@ -176,7 +199,10 @@ body div ul {
 		bottom: 50%;
 		left: 50px;
 		transform: translateY(50%);
-		gap: 16px;
+	}
+
+	body div > *:not(:last-child) {
+		margin-bottom: 16px;
 	}
 
 	body div h1 {
@@ -214,7 +240,10 @@ body div ul {
 
 	body div {
 		padding: 50px 20px 75px;
-		gap: 40px;
+	}
+
+	body div > *:not(:last-child) {
+		margin-bottom: 40px;
 	}
 
 	body div h1 {
